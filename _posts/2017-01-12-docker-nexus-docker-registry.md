@@ -91,6 +91,7 @@ docker run -d -p 8081:8081 -p 12000:12000 --name nexus -v /home/ubuntu/nexus-dat
  * proxy : docker hub 또는 사설 docker registry 를 캐쉬해서 빠른 속도로 사용할 수 있게 해준다.
 
 ![Docker Registry 만들기]({{ site.url }}/assets/images/20170112-1/create-docker-registry.png){:.center}
+
  * Name : 이해하기 쉽게 만들면 된다.
  * HTTP : Repository로 사용할 포트 입력
  * Enable Docker V1 API : 체크
