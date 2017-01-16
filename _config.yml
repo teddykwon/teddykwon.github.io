@@ -15,6 +15,8 @@
 # in the templates via {{ site.myvariable }}.
 title: Teddy Tech Blog
 email: kwonohbin1226@gmail.com
+author: 권오빈
+avatar: "//avatars3.githubusercontent.com/u/8197923?v=3&s=135"
 description: > # this means to ignore newlines until "baseurl:"
   2010년 SI 개발자로 시작하여 현재는 스타트업에서 풀스텍 개발자로 근무 중인 권 오빈의 기술 블로그 입니다.
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -23,9 +25,19 @@ github_username:  teddykwon
 
 # Build settings
 markdown: kramdown
-theme: minima
 gems:
   - jekyll-feed
+  - jekyll-paginate
+
 exclude:
   - Gemfile
   - Gemfile.lock
+
+paginate: 5
+paginate_path: "page:num"
+
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
