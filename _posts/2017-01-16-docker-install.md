@@ -33,7 +33,8 @@ date:   2017-01-16 18:40:00 +0900
 
  마지막 명령어 이후에 다시 로그인 한다.
 
- ### 설치 확인
+### 설치 확인
+
  {% highlight bash %}
  docker info
  {% endhighlight %}
