@@ -9,6 +9,7 @@ tags: [인프라, docker, ubuntu, nexus, docker-registry]
 
 # 설명
 ## Docker
+
 ![Docker]({{ site.url }}/assets/images/20170112-1/docker.png){:.center}
 
  Docker는 Docker Inc에서 출시한 오픈 소스 컨테이너 프로젝트 이다. 전 세계적으로 Cloud Platform과 DevOps 확산으로 널리 쓰이고 있다. 기존에 VM 등으로 만든 가상화 서버에서 새로 가상화 서버를 만들 때 마다 각종 패키지를 설치하는 방식을, Docker Image를 활용하여 컴퓨터에 CD 교체 하듯이 필요한 패키지, 소프트웨어만 설치하여 활용 할 수 있다.
