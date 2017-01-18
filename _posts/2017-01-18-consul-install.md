@@ -69,7 +69,7 @@ Consul 에서 사용하는 포트는 아래와 같으며, 8500 포트는 Consul 
 
     Consul 데이터 폴더, Web UI 소스가 위치할 폴더, 설정파일이 위치할 폴더를 생성한다.
 
-    ```bash
+    ```shell
     sudo mkdir -p /data/consul
     sudo mkdir -p /data/consul-ui
     sudo mkdir -p /etc/consul.d/server
@@ -80,7 +80,7 @@ Consul 에서 사용하는 포트는 아래와 같으며, 8500 포트는 Consul 
 
     Web UI를 다운로드 받고, 압축을 푼다.
 
-    ```bash
+    ```shell
     cd /data/consul-ui
     wget https://releases.hashicorp.com/consul/0.7.2/consul_0.7.2_web_ui.zip
     unzip consul_0.7.2_web_ui.zip
@@ -91,7 +91,7 @@ Consul 에서 사용하는 포트는 아래와 같으며, 8500 포트는 Consul 
 
     암호화를 위해 키를 생성한다. 해당 키는 Consul 전체에서 사용된다.
 
-    ```bash
+    ```shell
     consul keygen
     ```
 
@@ -99,7 +99,7 @@ Consul 에서 사용하는 포트는 아래와 같으며, 8500 포트는 Consul 
 
     마지막으로 Consul server에 config 파일을 생성한다.
 
-    ```bash
+    ```shell
     vi /etc/consul.d/server/config.json
     ```
 
