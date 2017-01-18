@@ -19,7 +19,7 @@ tags: [인프라, docker, ubuntu]
 
  설치는 **Ubuntu 14.04** 기준으로 작성했다.
 
- {% highlight bash %}
+ ```shell
  sudo apt-get update
  sudo apt-get install apt-transport-https ca-certificates
  sudo apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
@@ -30,14 +30,14 @@ tags: [인프라, docker, ubuntu]
  sudo apt-get update
  sudo apt-get install docker-engine
  sudo usermod -aG docker ubuntu
- {% endhighlight %}
+ ```
 
  마지막 명령어 이후에 다시 로그인 한다.
 
 ### 설치 확인
 
- {% highlight bash %}
+ ```shell
  docker info
- {% endhighlight %}
+ ```
 
  ![Docker]({{ site.url }}/assets/images/20170112-1/docker-install-check.png){:.center}

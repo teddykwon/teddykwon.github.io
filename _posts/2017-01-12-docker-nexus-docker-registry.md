@@ -39,17 +39,17 @@ Docker 를 설치하는 방법은 [Ubuntu에서 Docker 설치하기]({{ site.bas
 
  nexus official image 에서 user 를 200 으로 사용한다. 만약 호스트에서 따로 데이터를 관리하지 않을 경우에는 아래 부분을 하지 않아도 된다.
 
-{% highlight bash %}
+```shell
 mkdir ~/nexus-data && sudo chown -R 200 ~/nexus-data
-{% endhighlight %}
+```
 
 ### 위에 생성한 폴더로 nexus 실행
 
 위 내용을 하지 않은 경우 -v /home/ubuntu/nexus-data:/nexus-data 없이 시작한다.
 
-{% highlight bash %}
+```shell
 docker run -d -p 8081:8081 -p 12000:12000 --name nexus -v /home/ubuntu/nexus-data:/nexus-data sonatype/nexus3
-{% endhighlight %}
+```
 
 ![Nexus Image 실행 결과]({{ site.url }}/assets/images/20170112-1/docker-nexus-install.png){:.center}
 
@@ -83,36 +83,37 @@ docker run -d -p 8081:8081 -p 12000:12000 --name nexus -v /home/ubuntu/nexus-dat
 
  **[Nexus 서버 IP 또는 도메인] 부분을 변경해서 실행한다.**
 
-{% highlight bash %}
+```shell
 sudo sh -c "echo 'DOCKER_OPTS=\"\$DOCKER_OPTS --insecure-registry=[Nexus 서버 IP 또는 도메인]:12000\"' >> /etc/default/docker"
-{% endhighlight %}
+```
 
 ### <a id="dockerRestart"></a>Docker 재시작
 
 Docker 옵션을 변경하고, 서비스를 재시작하면 해당 옵션이 반영된다. Docker 재시작 시 컨테이너가 종료되서, nexus 를 다시 실행 시켜준다.
 
-{% highlight bash %}
+```shell
 sudo service docker restart
 docker start nexus
-{% endhighlight %}
+```
 
 ## Test
 
 ### <a id="dockerRegistryLogin"></a>로그인
 
-{% highlight bash %}
+```shell
 docker login -u admin -p admin123 [Nexus 서버 IP 또는 도메인]:12000
-{% endhighlight %}
+```
 
 ### Docker Image Push, Pull Test
-{% highlight bash %}
+
+```shell
 docker pull hello-world
 docker tag hello-world [Nexus 서버 IP 또는 도메인]:12000/hello-world
 docker push [Nexus 서버 IP 또는 도메인]:12000/hello-world
 docker rmi hello-world [Nexus 서버 IP 또는 도메인]:12000/hello-world
 docker pull [Nexus 서버 IP 또는 도메인]:12000/hello-world
 docker images
-{% endhighlight %}
+```
 
  위에 명령어가 에러 없이 종료 되면 아래와 같이 나온다.
 
@@ -123,10 +124,10 @@ docker images
 
  IP 와 Port 가 방화벽 상에서 우선 처리가 되어 있어야 한다.
 
-{% highlight bash %}
+```shell
 docker pull [Nexus 서버 IP 또는 도메인]:12000/hello-world
 docker images
-{% endhighlight %}
+```
 
 # 마치며
 

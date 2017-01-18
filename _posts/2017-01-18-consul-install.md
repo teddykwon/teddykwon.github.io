@@ -58,6 +58,7 @@ Consul 에서 사용하는 포트끼리 통신할 수 있도록 방화벽 설정
 Consul 에서 사용하는 포트는 아래와 같으며, 8500 포트는 Consul server에만 오픈한다.
 
 |Port|Protocol|비고|
+|---|---|---|
 |8300|TCP||
 |8301|TCP & UDP||
 |8500|TCP|UI 접속용|
