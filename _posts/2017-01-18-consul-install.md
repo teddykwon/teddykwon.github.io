@@ -257,7 +257,7 @@ Consul agent 설정임으로, Consul agent가 될 호스트에서 작업한다.
 
     ![Consul UI에서 agent 추가 확인]({{ site.url }}/assets/images/docker-swarm-consul/consul-ui-agent-add.png)
 
-    Consul server 에서 아래 명령어를 실행해서도 확인할 수 있다.
+    Consul server 에서 아래 명령어로도 확인할 수 있다.
 
     ```bash
     consul members
