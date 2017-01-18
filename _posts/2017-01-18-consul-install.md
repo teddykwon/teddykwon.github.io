@@ -70,12 +70,12 @@ Consul 에서 사용하는 포트는 아래와 같으며, 8500 포트는 Consul 
 
     Consul 데이터 폴더, Web UI 소스가 위치할 폴더, 설정파일이 위치할 폴더를 생성한다.
 
-    ```shell
-    sudo mkdir -p /data/consul
-    sudo mkdir -p /data/consul-ui
-    sudo mkdir -p /etc/consul.d/server
-    sudo chown -R ubuntu:ubuntu /data/consul /data/consul-ui /etc/consul.d
-    ```
+   ```shell
+   sudo mkdir -p /data/consul
+   sudo mkdir -p /data/consul-ui
+   sudo mkdir -p /etc/consul.d/server
+   sudo chown -R ubuntu:ubuntu /data/consul /data/consul-ui /etc/consul.d
+   ```
 
 2. **Web UI 설치**
 
