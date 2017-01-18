@@ -30,6 +30,7 @@ gems:
   - jekyll-feed
   - jekyll-paginate
   - rouge
+  - jekyll-sitemap
 
 exclude:
   - Gemfile
