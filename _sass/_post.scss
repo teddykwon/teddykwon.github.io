@@ -24,27 +24,27 @@
     }
     .post-content {
         color: #333;
-        
+
         h1,h2,h3,h4,h5,h6 {
             color: #000;
         }
-        
+
         h1, h2 {
         	margin-bottom: 10px;
             margin-top: 30px;
         }
-        
+
         h1, h2, h3 {
             border-bottom: 1px solid #CCC;
         }
-        
+
         pre {
         	margin: 0 -30px;
             @include media-query($on-palm) {
 		        margin: 0 -10px;
             }
         }
-        
+
         .middle-image {
             display: block;
             margin-left: auto;
@@ -53,5 +53,26 @@
     }
     .post-comments {
         padding-top: 30px;
+    }
+    .post-tags {
+      margin: 0;
+      margin-top: 30px;
+      padding: 0;
+      list-style: none;
+      > li {
+        display: inline-block;
+        > a {
+          background: #999;
+          color: #eee;
+          padding: 5px 10px;
+          text-decoration: none;
+          border-radius: 5px;
+          white-space: nowrap;
+          &:hover{
+            transition: background 0.3s ease;
+            background: #666;
+          }
+        }
+      }
     }
 }

@@ -2,6 +2,7 @@
 layout: post
 title:  "Docker 로 Nexus 설치 후 Private Docker Registry 구축하기"
 date:   2017-01-12 14:58:00 +0900
+tags: [인프라, docker, ubuntu, nexus, docker-registry]
 ---
 
 이번 포스팅에서는 Docker에 Nexus를 설치하고, Nexus를 활용하여 Private Docker Registry 를 구축하는 방법을 설명한다.
@@ -28,27 +29,7 @@ date:   2017-01-12 14:58:00 +0900
 
 ## Docker
 
-{% highlight bash %}
-sudo apt-get update
-sudo apt-get install apt-transport-https ca-certificates
-sudo apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
-sudo mkdir -p /etc/apt/sources.list.d
-sudo sh -c "echo 'deb https://apt.dockerproject.org/repo ubuntu-trusty main' > /etc/apt/sources.list.d/docker.list"
-sudo apt-get install linux-image-extra-$(uname -r)
-sudo apt-get install apparmor
-sudo apt-get update
-sudo apt-get install docker-engine
-sudo usermod -aG docker ubuntu
-{% endhighlight %}
-
-마지막 명령어 이후에 다시 로그인 한다.
-
-### 설치 확인
-{% highlight bash %}
-docker info
-{% endhighlight %}
-
-![Docker]({{ site.url }}/assets/images/20170112-1/docker-install-check.png){:.center}
+Docker 를 설치하는 방법은 [Ubuntu에서 Docker 설치하기]({{ site.baseurl }}{% link _posts/2017-01-16-docker-install.md %}) 를 확인한다.
 
 ## Nexus 설치
 

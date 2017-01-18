@@ -11,7 +11,13 @@ layout: default
   <article class="post-content">
     {{ content }}
   </article>
-  
+
+  <ul class="tags post-tags cf">
+    {% for tag in page.tags %}
+    <li><a href="#{{ tag }}">{{ tag | downcase }}</a></li>
+    {% endfor %}
+  </ul>
+
   {% include comment.html %}
 
 </div>
