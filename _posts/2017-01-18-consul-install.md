@@ -23,19 +23,19 @@ tags: [인프라, docker, ubuntu, consul]
 
 wget 을 이용해서 다운로드 받은 후 실행경로로 이동한다.
 
-{% highlight bash %}
+```shell
 wget https://releases.hashicorp.com/consul/0.7.2/consul_0.7.2_linux_amd64.zip -O /tmp/consul.zip
 sudo apt-get install -y unzip
 unzip /tmp/consul.zip
 sudo cp ./consul /usr/local/bin
 sudo mv ./consul /usr/bin
-{% endhighlight %}
+```
 
 ## 설치 확인
 
-{% highlight bash %}
+```shell
 consul version
-{% endhighlight %}
+```
 
 아래의 이미지와 같이 나오면 된다.
 
@@ -143,7 +143,7 @@ Consul 에서 사용하는 포트는 아래와 같으며, 8500 포트는 Consul 
 
     [Consul 서버 IP]를 Consul server 를 설치한 서버 IP로 변경한다.
 
-    ```bash
+    ```shell
     nohup consul agent --server -config-dir=/etc/consul.d/server -bind=[Consul 서버 IP] &
     ```
 
