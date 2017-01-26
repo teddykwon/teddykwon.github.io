@@ -17,27 +17,27 @@ tags: [인프라, docker, ubuntu]
 
 # 설치
 
- 설치는 **Ubuntu 14.04** 기준으로 작성했다.
+설치는 **Ubuntu 14.04** 기준으로 작성했다.
 
- ```shell
- sudo apt-get update
- sudo apt-get install apt-transport-https ca-certificates
- sudo apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
- sudo mkdir -p /etc/apt/sources.list.d
- sudo sh -c "echo 'deb https://apt.dockerproject.org/repo ubuntu-trusty main' > /etc/apt/sources.list.d/docker.list"
- sudo apt-get install linux-image-extra-$(uname -r)
- sudo apt-get install apparmor
- sudo apt-get update
- sudo apt-get install docker-engine
- sudo usermod -aG docker ubuntu
- ```
+``` shell
+sudo apt-get update
+sudo apt-get install apt-transport-https ca-certificates
+sudo apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+sudo mkdir -p /etc/apt/sources.list.d
+sudo sh -c "echo 'deb https://apt.dockerproject.org/repo ubuntu-trusty main' > /etc/apt/sources.list.d/docker.list"
+sudo apt-get install linux-image-extra-$(uname -r)
+sudo apt-get install apparmor
+sudo apt-get update
+sudo apt-get install docker-engine
+sudo usermod -aG docker ubuntu
+```
 
  마지막 명령어 이후에 다시 로그인 한다.
 
 ### 설치 확인
 
- ```shell
- docker info
- ```
+``` shell
+docker info
+```
 
- ![Docker]({{ site.url }}/assets/images/20170112-1/docker-install-check.png){:.center}
+![Docker]({{ site.url }}/assets/images/20170112-1/docker-install-check.png){:.center}
