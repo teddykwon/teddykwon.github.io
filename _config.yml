@@ -44,3 +44,15 @@ highlighter: rouge
 kramdown:
   input: GFM
   syntax_highlighter: rouge
+
+collections:
+  tags:
+    output: true
+    permalink: /tags/:path/
+
+defaults:
+  - scope:
+      path: ''
+      type: tags
+    values:
+      layout: tag

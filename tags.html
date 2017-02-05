@@ -1,0 +1,20 @@
+---
+layout: default
+title: Tags
+permalink: /tags/
+public: true
+---
+
+<div class="home">
+  <h1 class="page-heading">Tags</h1>
+
+  <ul>
+
+  {% for tag in site.tags %}
+    <li>
+     <a href="/tags/{{tag.name}}">{{ tag.title }}</a>
+    </li>
+  {% endfor %}
+  </ul>
+
+</div>

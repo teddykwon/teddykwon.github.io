@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Registrator 실행 및 테스트"
-tags: ["인프라", "ubuntu", "consul", "registrator"]
+tags: ["인프라", "ubuntu", "consul"]
 date:   2017-01-20 19:50:00 +0900
 ---
 
