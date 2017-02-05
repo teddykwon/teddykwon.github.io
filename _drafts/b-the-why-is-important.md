@@ -56,9 +56,11 @@ Why의 중요성은 결국 동기의 중요성이다. \[완벽한 공부법\] �
 
 ``` java
 String hello = "hello";
-System.out.println(hello.indexOf(1));
+System.out.println(hello.substring(1));
 ```
 
-원리를 설명하는 글이 아니기 때문에, 간단하게 설명하면 String은 char의 배열로 이루어져 있다. 그리고 indexOf 메소드는 내부적으로 char배열을 반복문을 돌려서, 해당 인덱스 이후 글자를 리턴해준다.
+원리를 설명하는 글이 아니기 때문에, 간단하게 설명하면 String은 char의 배열로 이루어져 있다. 그리고 substring 메소드는 내부적으로 char배열을 반복문을 돌려서, 해당 인덱스 이후 글자를 리턴해준다.
 
-결국 "hello"는 \['h', 'e', 'l', 'l', 'o'\]이고, 위 예제 소스에서 인덱스는 1이기 때문에, 배얼에서 index가 1인 'e' 부터 꺼내오는 것이다.
+* new String(char value[], int offset, int count)이 호출되고, Arrays.copyOfRange로 배열 상에서 해당 인덱스부터 length까지 복사한다.
+
+결국 "hello"는 \['h', 'e', 'l', 'l', 'o'\]이고, 위 예제 소스에서 인덱스는 1이기 때문에, 배얼에서 index가 1인 'e' 부터 \['e', 'l', 'l', 'o'\]가 리턴 되는 것이다.
