@@ -46,11 +46,11 @@ Ant와 같이 자유롭게 Build 및 Deploy에 자유도를 주면서, Maven의 
 
 5. 실행 확인
 
-   ``` shell
-   gradle -v
-   ```
+	``` shell
+	gradle -v
+	```
 
-   위 명령어를 실행하면, Gradle 3.3이 설치되어있는 것을 확인할 수 있다.
+	위 명령어를 실행하면, Gradle 3.3이 설치되어있는 것을 확인할 수 있다.
 
 # 마치며
 
