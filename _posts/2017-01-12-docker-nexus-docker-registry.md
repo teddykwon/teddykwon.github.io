@@ -2,7 +2,7 @@
 layout: post
 title:  "Docker 로 Nexus 설치 후 Private Docker Registry 구축하기"
 date:   2017-01-12 14:58:00 +0900
-tags: [인프라, docker, ubuntu, nexus, docker-registry]
+tags: [infrastructure, docker, ubuntu, nexus, docker-registry]
 ---
 
 이번 포스팅에서는 Docker에 Nexus를 설치하고, Nexus를 활용하여 Private Docker Registry 를 구축하는 방법을 설명한다.

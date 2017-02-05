@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "여러 호스트에 Consul 설치 후 연동하기"
-tags: [인프라, docker, ubuntu, consul]
+tags: [infrastructure, docker, ubuntu, consul]
 ---
 
 여러 호스트에 Consul를 설치하여 인프라를 구축하는 방법을 설명하려고 한다. 향후 포스팅에서는 Consul로 구성된 환경에서 Swarm을 사용하는 방법을 포스팅 할 예정이다.

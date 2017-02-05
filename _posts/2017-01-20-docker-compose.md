@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Docker Compose 메뉴얼 설치"
-tags: ["인프라", "ubuntu", "docker"]
+tags: ["infrastructure", "ubuntu", "docker"]
 ---
 
 Docker Compose는 Docker 컨테이너를 손쉽게 실행할 수 있게 도와준다.

@@ -2,7 +2,7 @@
 layout: post
 title:  "Ubuntu에서 Docker 설치하기"
 date:   2017-01-16 18:40:00 +0900
-tags: [인프라, docker, ubuntu]
+tags: [infrastructure, docker, ubuntu]
 ---
 
 이번 포스팅에서는 Ubuntu 에 Docker 를 설치하는 스크립트를 설명한다.

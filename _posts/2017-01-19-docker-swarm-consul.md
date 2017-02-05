@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Docker Swarm과 Consul로 Docker 클러스터링 하기"
-tags: ["인프라", "ubuntu", "docker", "swarm", "consul"]
+tags: ["infrastructure", "ubuntu", "docker", "swarm", "consul"]
 ---
 
 여러 호스트에 Docker Swarm 과 Consul 를 설치하여 인프라를 구축 하는 방법을 설명하려고 한다.
